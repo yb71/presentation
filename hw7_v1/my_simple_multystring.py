@@ -21,7 +21,7 @@ class Weight(object):
 
 
 class TripleString(object):
-    '''TripleString docstrings.'''
+    """TripleString docstrings."""
 
     print("log: from class")
 
@@ -94,3 +94,4 @@ if __name__ == '__main__':
 
     t = TripleString(string1='1test', string2='2test', string3='3test')
     print(t)
+

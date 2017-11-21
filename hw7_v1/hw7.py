@@ -1,8 +1,9 @@
-# 1 ---------------------------------------------------------------------
-#######  module name
+# 1.1 ---------------------------------------------------------------------
+# import my_simple_multystring
+
+# 1.2 ---------------------------------------------------------------------
 import my_simple_multystring
 
-print()
 # print("<< printing from hw7.py >>")
 # print("file name:", __file__)
 # print("this module's name:", __name__)

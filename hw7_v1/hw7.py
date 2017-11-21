@@ -1,17 +1,14 @@
-# 1.1 ---------------------------------------------------------------------
+# 1a ---------------------------------------------------------------------
 # import my_simple_multystring
 
-# 1.2 ---------------------------------------------------------------------
-import my_simple_multystring
-
+# 1b ---------------------------------------------------------------------
+# import my_simple_multystring
+#
 # print("<< printing from hw7.py >>")
-# print("file name:", __file__)
-# print("this module's name:", __name__)
+# print("module name:", __name__)
 # print()
 
 # 2 ---------------------------------------------------------------------
-#######  the only true global variables are module level variables
-
 # import my_simple_multystring as ms
 #
 # print()
@@ -25,8 +22,6 @@ import my_simple_multystring
 # print("_MAX_LEN =", ms._MAX_LEN)
 
 # 3 ---------------------------------------------------------------------
-#######  import statements
-
 # import math
 #
 # print(math.pi)
@@ -39,13 +34,35 @@ import my_simple_multystring
 # pi = 777
 # print(pi)
 
-# from math import sqrt
-# math.pi
-# gives you no direct access to pi
+# from math import sqrt, log
+#
+# math.pi  # gives you no direct access to pi
+# pi = 5
+# print('pi =', pi)
+# x = sqrt(pi)
+# y = log(pi)
 
-# 4 ---------------------------------------------------------------------
-#######  class level variable
+# 4a ---------------------------------------------------------------------
+# from my_simple_multystring import TripleString, varx
+#
+# assert varx == "global"
+# varx = "test"
+#
+# t = TripleString.from_list(['one'])
+# print(t)
 
+# 4b ---------------------------------------------------------------------
+# from my_simple_multystring import TripleString, varx
+# from pycallgraph import PyCallGraph
+# from pycallgraph.output import GraphvizOutput
+#
+# graphviz = GraphvizOutput()
+# graphviz.output_file = 'basic.png'
+#
+# with PyCallGraph(output=graphviz):
+#     t = TripleString.from_list(['one', 'two', 'three'])
+
+# 5a ---------------------------------------------------------------------
 # from my_simple_multystring import TripleString
 #
 # t1 = TripleString('a', 'b', 'c')
@@ -68,19 +85,18 @@ import my_simple_multystring
 # t1.LUCKY_NUM = 666
 # print("TripleString.LUCKY_NUM ->", TripleString.LUCKY_NUM)
 # print("t1.NUM ->", t1.LUCKY_NUM)
-# print(t1.__dict__)
 # print("t2.NUM ->", t2.LUCKY_NUM)
-# print(t2.__dict__)
 # print()
+# print(t1.__dict__)
+# print(t2.__dict__)
 
-
-####### Python classes are created at runtime, and can be modified further after creation
+# 5b ---------------------------------------------------------------------
 
 # t1.new_var = 'привет'  # additional attributes can be created
+# print()
 # print(t1.__dict__)
 
-
-# 5 ---------------------------------------------------------------------
+# 6 ---------------------------------------------------------------------
 #######  class methods as alternative constructors
 
 # from my_simple_multystring import TripleString
@@ -92,7 +108,7 @@ import my_simple_multystring
 # print(t1 == t3)  # uses __eq__ method
 
 
-# 6 ---------------------------------------------------------------------
+# 7 ---------------------------------------------------------------------
 #######  methods vs properties
 
 # from my_simple_multystring import TripleString

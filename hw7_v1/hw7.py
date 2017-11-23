@@ -115,13 +115,13 @@ from multystring import TripleString
 
 
 # 6b ---------------------------------------------------------------------
-from multystring import TripleString
-
-t1 = TripleString('a', 'b', 'c')
-print(t1)
-
-print(t1.abbreviate())
-print(TripleString.abbreviate(t1))  # alternative syntax for instance methods
+# from multystring import TripleString
+#
+# t1 = TripleString('a', 'b', 'c')
+# print(t1)
+#
+# print(t1.abbreviate())
+# print(TripleString.abbreviate(t1))  # alternative syntax for instance methods
 
 
 # 7 ---------------------------------------------------------------------
@@ -135,23 +135,21 @@ print(TripleString.abbreviate(t1))  # alternative syntax for instance methods
 # from multystring import TripleString
 #
 # t1 = TripleString('a', 'b', 'c')
-# print('\n--------------------')
+#
 # print('"Public" instance attributes:\n')
 # for item in dir(t1):
 #     if item[0] != '_':
 #         print(item, '=', getattr(t1, item, None))
 #
-# print('\n--------------------')
+# print('\n--------------------\n')
 # print('"Private" instance attributes:\n')
 # for item in dir(t1):
 #     if item[0] == '_' and item[1] != '_':
 #         print(item, '=', getattr(t1, item, None))
 #
 #
-# print('\n--------------------')
+# print('\n--------------------\n')
 # print('"Magic" instance methods:\n')
 # for item in dir(t1):
 #     if item[0] == '_' and item[1] == '_':
 #         print(item, '=', getattr(t1, item, None))
-
-

@@ -1,15 +1,16 @@
 # 1a ---------------------------------------------------------------------
-# import my_simple_multystring
+# import multystring
+
 
 # 1b ---------------------------------------------------------------------
-# import my_simple_multystring
+# import multystring
 #
-# print("<< printing from hw7.py >>")
-# print("module name:", __name__)
+# print("<< printing from module {} >>".format(__name__))
 # print()
 
+
 # 2 ---------------------------------------------------------------------
-# import my_simple_multystring as ms
+# import multystring as ms
 #
 # print()
 # print("_MIN_LEN =", ms._MIN_LEN)
@@ -20,6 +21,7 @@
 # ms._MAX_LEN = 0
 # print("_MIN_LEN =", ms._MIN_LEN)
 # print("_MAX_LEN =", ms._MAX_LEN)
+
 
 # 3 ---------------------------------------------------------------------
 # import math
@@ -42,8 +44,9 @@
 # x = sqrt(pi)
 # y = log(pi)
 
+
 # 4a ---------------------------------------------------------------------
-# from my_simple_multystring import TripleString, varx
+# from multystring import TripleString, varx
 #
 # assert varx == "global"
 # varx = "test"
@@ -51,8 +54,9 @@
 # t = TripleString.from_list(['one'])
 # print(t)
 
+
 # 4b ---------------------------------------------------------------------
-# from my_simple_multystring import TripleString, varx
+# from multystring import TripleString, varx
 # from pycallgraph import PyCallGraph
 # from pycallgraph.output import GraphvizOutput
 #
@@ -62,9 +66,10 @@
 # with PyCallGraph(output=graphviz):
 #     t = TripleString.from_list(['one', 'two', 'three'])
 
+
 # 5a ---------------------------------------------------------------------
-# from my_simple_multystring import TripleString
-#
+from multystring import TripleString
+
 # t1 = TripleString('a', 'b', 'c')
 # t2 = TripleString('x', 'y', 'z')
 # print(t1)
@@ -90,55 +95,61 @@
 # print(t1.__dict__)
 # print(t2.__dict__)
 
+
 # 5b ---------------------------------------------------------------------
 
 # t1.new_var = 'привет'  # additional attributes can be created
 # print()
 # print(t1.__dict__)
 
-# 6 ---------------------------------------------------------------------
-#######  class methods as alternative constructors
 
-# from my_simple_multystring import TripleString
+# 6a ---------------------------------------------------------------------
+# from multystring import TripleString
 #
 # t1 = TripleString('a', 'b', 'c')
-# t3 = TripleString.from_tripleString(t1)
+# t2 = TripleString.from_list(['a', 'b', 'c'])
+#
 # print(t1)
-# print(t3)
-# print(t1 == t3)  # uses __eq__ method
+# print(t2)        # uses __repr__ method
+# print(t1 == t2)  # uses __eq__ method
+
+
+# 6b ---------------------------------------------------------------------
+from multystring import TripleString
+
+t1 = TripleString('a', 'b', 'c')
+print(t1)
+
+print(t1.abbreviate())
+print(TripleString.abbreviate(t1))  # alternative syntax for instance methods
 
 
 # 7 ---------------------------------------------------------------------
-#######  methods vs properties
-
-# from my_simple_multystring import TripleString
+# from multystring import TripleString
 #
-# t1 = TripleString('a', 'b', 'c')
-# print(type(t1))
-
-# print(t1.abr())  # print(t1.abr)
-# print(TripleString.abr(t1))
-
+# print('Class attributes:\n')
 # for item in dir(TripleString):
 #     print(item, getattr(TripleString, item, None))
 
+# 9 ---------------------------------------------------------------------
+# from multystring import TripleString
+#
+# t1 = TripleString('a', 'b', 'c')
 # print('\n--------------------')
-# print('"Public" attributes:\n')
+# print('"Public" instance attributes:\n')
 # for item in dir(t1):
 #     if item[0] != '_':
 #         print(item, '=', getattr(t1, item, None))
-# print()
-#
 #
 # print('\n--------------------')
-# print('"Private" attributes:\n')
+# print('"Private" instance attributes:\n')
 # for item in dir(t1):
 #     if item[0] == '_' and item[1] != '_':
 #         print(item, '=', getattr(t1, item, None))
 #
 #
 # print('\n--------------------')
-# print('"Magic" methods:\n')
+# print('"Magic" instance methods:\n')
 # for item in dir(t1):
 #     if item[0] == '_' and item[1] == '_':
 #         print(item, '=', getattr(t1, item, None))

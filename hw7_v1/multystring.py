@@ -5,27 +5,45 @@ _DEFAULT = "undefined"
 varx = "global"
 
 print()
-print("<< printing from module {} >>".format(__name__))
-print('before class varx =', varx)
+print("<<< printing from module {} >>>".format(__name__))
+print('*** before class varx =', varx)
 
 
 def my_addition(x, y):
     return x + y
 
 
-class Weight(object):
-    def __init__(self, val, unit):
-        self.val = val
-        self.unit = unit
+class BaseMeta(type):
+
+    def __new__(mcs, clsname, bases, methods):
+        print("\t")
+        print("\tCreating:", clsname, "class")
+        print("\tBases:", bases)
+        print("\tMethods:", list(methods))
+        return super().__new__(mcs, clsname, bases, methods)
+
+    def __init__(cls, clsname, bases, methods):
+        super().__init__(clsname, bases, methods)
+        if not hasattr(cls, 'LUCKY_NUM'):
+            raise TypeError("must have LUCKY_NUM!")
 
 
-class TripleString(object):
+class BaseClass(metaclass=BaseMeta):
+
+    LUCKY_NUM = 3
+    def __init__(self, string1=_DEFAULT, string2=_DEFAULT, string3=_DEFAULT):
+        self.string1 = string1
+        self.string2 = string2
+        self.string3 = string3
+
+
+class TripleString(BaseClass):
     """TripleString docstring"""
 
     _count = 0  # class level variables
-    LUCKY_NUM = 3
+    LUCKY_NUM = 5
     varx = "class"
-    print("from class varx =", varx)
+    print("*** from class varx =", varx)
 
     @staticmethod
     def _is_valid(the_str):
@@ -36,9 +54,10 @@ class TripleString(object):
 
     def __init__(self, string1=_DEFAULT, string2=_DEFAULT, string3=_DEFAULT):
         varx = "init"
-        self.string1 = string1
-        self.string2 = string2
-        self.string3 = string3
+        super().__init__(string1=_DEFAULT, string2=_DEFAULT, string3=_DEFAULT)
+        # self.string1 = string1
+        # self.string2 = string2
+        # self.string3 = string3
         TripleString._count += 1
         self.id = TripleString._count
 
@@ -101,11 +120,10 @@ class TripleString(object):
             return cls(string1=lst[0], string2=lst[1], string3=lst[2])
 
 
-print('after class varx =', varx, '\n--------------------------\n')
+print('*** after class varx =', varx, '\n----------------------------------------------------------\n')
 
 
 if __name__ == '__main__':
-    print('Module test\n')
 
     t = TripleString(
         string1='''A robot may not injure a human being or, through inaction, 

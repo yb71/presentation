@@ -1,0 +1,41 @@
+Object attributes:
+
+LUCKY_NUM 3
+_TripleString__s1 a
+_TripleString__s2 b
+_TripleString__s3 c
+__class__ <class 'multystring.TripleString'>
+__delattr__ <method-wrapper '__delattr__' of TripleString object at 0x102107320>
+__dict__ {'_TripleString__s1': 'a', '_TripleString__s2': 'b', '_TripleString__s3': 'c', 'id': 1}
+__dir__ <built-in method __dir__ of TripleString object at 0x102107320>
+__doc__ TripleString docstring
+__eq__ <bound method TripleString.__eq__ of TripleString ("a", "b", "c")>
+__format__ <built-in method __format__ of TripleString object at 0x102107320>
+__ge__ <method-wrapper '__ge__' of TripleString object at 0x102107320>
+__getattribute__ <method-wrapper '__getattribute__' of TripleString object at 0x102107320>
+__gt__ <method-wrapper '__gt__' of TripleString object at 0x102107320>
+__hash__ None
+__init__ <bound method TripleString.__init__ of TripleString ("a", "b", "c")>
+__init_subclass__ <built-in method __init_subclass__ of type object at 0x102400e18>
+__le__ <method-wrapper '__le__' of TripleString object at 0x102107320>
+__lt__ <method-wrapper '__lt__' of TripleString object at 0x102107320>
+__module__ multystring
+__ne__ <method-wrapper '__ne__' of TripleString object at 0x102107320>
+__new__ <built-in method __new__ of type object at 0x1002416e0>
+__reduce__ <built-in method __reduce__ of TripleString object at 0x102107320>
+__reduce_ex__ <built-in method __reduce_ex__ of TripleString object at 0x102107320>
+__repr__ <bound method TripleString.__repr__ of TripleString ("a", "b", "c")>
+__setattr__ <method-wrapper '__setattr__' of TripleString object at 0x102107320>
+__sizeof__ <built-in method __sizeof__ of TripleString object at 0x102107320>
+__str__ <bound method TripleString.__str__ of TripleString ("a", "b", "c")>
+__subclasshook__ <built-in method __subclasshook__ of type object at 0x102400e18>
+__weakref__ None
+_count 1
+_is_valid <function TripleString._is_valid at 0x1022477b8>
+abbreviate <bound method TripleString.abbreviate of TripleString ("a", "b", "c")>
+from_list <bound method TripleString.from_list of <class 'multystring.TripleString'>>
+id 1
+string1 a
+string2 b
+string3 c
+varx class

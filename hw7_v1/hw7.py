@@ -61,7 +61,7 @@
 # from pycallgraph.output import GraphvizOutput
 #
 # graphviz = GraphvizOutput()
-# graphviz.output_file = 'basic.png'
+# graphviz.output_file = 'diagram.png'
 #
 # with PyCallGraph(output=graphviz):
 #     t = TripleString.from_list(['one', 'two', 'three'])
@@ -124,12 +124,20 @@ from multystring import TripleString
 # print(TripleString.abbreviate(t1))  # alternative syntax for instance methods
 
 
-# 8 ---------------------------------------------------------------------
+# 8a ---------------------------------------------------------------------
 # from multystring import TripleString
 #
 # print('Class attributes:\n')
 # for item in dir(TripleString):
 #     print(item, getattr(TripleString, item, None))
+
+# 8b ---------------------------------------------------------------------
+# from multystring import TripleString
+#
+# t1 = TripleString('a', 'b', 'c')
+# print('Object attributes:\n')
+# for item in dir(t1):
+#     print(item, getattr(t1, item, None))
 
 # 9 ---------------------------------------------------------------------
 # from multystring import TripleString

@@ -1,0 +1,41 @@
+Object attributes:
+
+LUCKY_NUM 5
+_TripleString__s1 undefined
+_TripleString__s2 undefined
+_TripleString__s3 undefined
+__class__ <class 'multystring.TripleString'>
+__delattr__ <method-wrapper '__delattr__' of TripleString object at 0x1019072b0>
+__dict__ {'_TripleString__s1': 'undefined', '_TripleString__s2': 'undefined', '_TripleString__s3': 'undefined', 'id': 1}
+__dir__ <built-in method __dir__ of TripleString object at 0x1019072b0>
+__doc__ TripleString docstring
+__eq__ <bound method TripleString.__eq__ of TripleString ("undefined", "undefined", "undefined")>
+__format__ <built-in method __format__ of TripleString object at 0x1019072b0>
+__ge__ <method-wrapper '__ge__' of TripleString object at 0x1019072b0>
+__getattribute__ <method-wrapper '__getattribute__' of TripleString object at 0x1019072b0>
+__gt__ <method-wrapper '__gt__' of TripleString object at 0x1019072b0>
+__hash__ None
+__init__ <bound method TripleString.__init__ of TripleString ("undefined", "undefined", "undefined")>
+__init_subclass__ <built-in method __init_subclass__ of BaseMeta object at 0x10055b538>
+__le__ <method-wrapper '__le__' of TripleString object at 0x1019072b0>
+__lt__ <method-wrapper '__lt__' of TripleString object at 0x1019072b0>
+__module__ multystring
+__ne__ <method-wrapper '__ne__' of TripleString object at 0x1019072b0>
+__new__ <built-in method __new__ of type object at 0x1002416e0>
+__reduce__ <built-in method __reduce__ of TripleString object at 0x1019072b0>
+__reduce_ex__ <built-in method __reduce_ex__ of TripleString object at 0x1019072b0>
+__repr__ <bound method TripleString.__repr__ of TripleString ("undefined", "undefined", "undefined")>
+__setattr__ <method-wrapper '__setattr__' of TripleString object at 0x1019072b0>
+__sizeof__ <built-in method __sizeof__ of TripleString object at 0x1019072b0>
+__str__ <bound method TripleString.__str__ of TripleString ("undefined", "undefined", "undefined")>
+__subclasshook__ <built-in method __subclasshook__ of BaseMeta object at 0x10055b538>
+__weakref__ None
+_count 1
+_is_valid <function TripleString._is_valid at 0x101a477b8>
+abbreviate <bound method TripleString.abbreviate of TripleString ("undefined", "undefined", "undefined")>
+from_list <bound method TripleString.from_list of <class 'multystring.TripleString'>>
+id 1
+string1 undefined
+string2 undefined
+string3 undefined
+varx class

@@ -13,31 +13,7 @@ def my_addition(x, y):
     return x + y
 
 
-class BaseMeta(type):
-
-    def __new__(mcs, clsname, bases, methods):
-        print("\t")
-        print("\tCreating:", clsname, "class")
-        print("\tBases:", bases)
-        print("\tMethods:", list(methods))
-        return super().__new__(mcs, clsname, bases, methods)
-
-    def __init__(cls, clsname, bases, methods):
-        super().__init__(clsname, bases, methods)
-        if not hasattr(cls, 'LUCKY_NUM'):
-            raise TypeError("must have LUCKY_NUM!")
-
-
-class BaseClass(metaclass=BaseMeta):
-
-    LUCKY_NUM = 3
-    def __init__(self, string1=_DEFAULT, string2=_DEFAULT, string3=_DEFAULT):
-        self.string1 = string1
-        self.string2 = string2
-        self.string3 = string3
-
-
-class TripleString(BaseClass):
+class TripleString(object):
     """TripleString docstring"""
 
     _count = 0  # class level variables
@@ -54,10 +30,9 @@ class TripleString(BaseClass):
 
     def __init__(self, string1=_DEFAULT, string2=_DEFAULT, string3=_DEFAULT):
         varx = "init"
-        super().__init__(string1=_DEFAULT, string2=_DEFAULT, string3=_DEFAULT)
-        # self.string1 = string1
-        # self.string2 = string2
-        # self.string3 = string3
+        self.string1 = string1
+        self.string2 = string2
+        self.string3 = string3
         TripleString._count += 1
         self.id = TripleString._count
 
@@ -66,7 +41,7 @@ class TripleString(BaseClass):
 
     def __repr__(self):
         return '{0.__name__} ("{1}", "{2}", "{3}")'.format(
-            type(self), self.__s1, self.__s2, self.__s3)
+            type(self), self.string1, self.string2, self.string3)
 
     def __str__(self):
         return '{0.__name__} #{1}:\n- string1: "{2}"\n- string2: "{3}"\n- string3: "{4}"\n'.format(

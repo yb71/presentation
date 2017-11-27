@@ -56,15 +56,15 @@
 
 
 # 5b ---------------------------------------------------------------------
-from multystring import TripleString, varx
-from pycallgraph import PyCallGraph
-from pycallgraph.output import GraphvizOutput
-
-graphviz = GraphvizOutput()
-graphviz.output_file = 'diagram.png'
-
-with PyCallGraph(output=graphviz):
-    t = TripleString.from_list(['one', 'two', 'three'])
+# from multystring import TripleString, varx
+# from pycallgraph import PyCallGraph
+# from pycallgraph.output import GraphvizOutput
+#
+# graphviz = GraphvizOutput()
+# graphviz.output_file = 'diagram.png'
+#
+# with PyCallGraph(output=graphviz):
+#     t = TripleString.from_list(['one', 'two', 'three'])
 
 
 # 6a ---------------------------------------------------------------------

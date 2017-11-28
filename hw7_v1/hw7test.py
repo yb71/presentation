@@ -1,18 +1,17 @@
-# 2a ---------------------------------------------------------------------
-import multistring
+# 1a ---------------------------------------------------------------------
+import triplestring
 
 
-# 2b ---------------------------------------------------------------------
-# import multistring
+# 1b ---------------------------------------------------------------------
+# import triplestring
 #
 # print("<< printing from module {} >>".format(__name__))
 # print()
 
 
-# 3 ---------------------------------------------------------------------
-# import multistring as ms
+# 2 ---------------------------------------------------------------------
+# import triplestring as ms
 #
-# print()
 # print("_MIN_LEN =", ms._MIN_LEN)
 # print("_MAX_LEN =", ms._MAX_LEN)
 #
@@ -23,7 +22,7 @@ import multistring
 # print("_MAX_LEN =", ms._MAX_LEN)
 
 
-# 4 ---------------------------------------------------------------------
+# 3 ---------------------------------------------------------------------
 # import math
 #
 # print(math.pi)
@@ -45,8 +44,8 @@ import multistring
 # y = log(pi)
 
 
-# 5a ---------------------------------------------------------------------
-# from multistring import TripleString, varx
+# 4a ---------------------------------------------------------------------
+# from triplestring import TripleString, varx
 #
 # assert varx == "global"
 # varx = "test"
@@ -55,8 +54,8 @@ import multistring
 # print(t)
 
 
-# 5b ---------------------------------------------------------------------
-# from multistring import TripleString, varx
+# 4b ---------------------------------------------------------------------
+# from triplestring import TripleString, varx
 # from pycallgraph import PyCallGraph
 # from pycallgraph.output import GraphvizOutput
 #
@@ -67,8 +66,8 @@ import multistring
 #     t = TripleString.from_list(['one', 'two', 'three'])
 
 
-# 6a ---------------------------------------------------------------------
-from multistring import TripleString
+# 5a ---------------------------------------------------------------------
+from triplestring import TripleString
 
 # t1 = TripleString('a', 'b', 'c')
 # t2 = TripleString('x', 'y', 'z')
@@ -96,15 +95,15 @@ from multistring import TripleString
 # print(t2.__dict__)
 
 
-# 6b ---------------------------------------------------------------------
+# 5b ---------------------------------------------------------------------
 
-# t1.new_var = 'привет'  # additional attributes can be created
+# t1.new_var = 'hello'  # additional attributes can be created on the fly
 # print()
 # print(t1.__dict__)
 
 
-# 7a ---------------------------------------------------------------------
-# from multistring import TripleString
+# 6a ---------------------------------------------------------------------
+# from triplestring import TripleString
 #
 # t1 = TripleString('a', 'b', 'c')
 # t2 = TripleString.from_list(['a', 'b', 'c'])
@@ -114,8 +113,8 @@ from multistring import TripleString
 # print(t1 == t2)  # uses __eq__ method
 
 
-# 7b ---------------------------------------------------------------------
-# from multistring import TripleString
+# 6b ---------------------------------------------------------------------
+# from triplestring import TripleString
 #
 # t1 = TripleString('a', 'b', 'c')
 # print(t1)
@@ -124,23 +123,23 @@ from multistring import TripleString
 # print(TripleString.abbreviate(t1))  # alternative syntax for instance methods
 
 
-# 8a ---------------------------------------------------------------------
-# from multistring import TripleString
+# 7a ---------------------------------------------------------------------
+# from triplestring import TripleString
 #
 # print('Class attributes:\n')
 # for item in dir(TripleString):
 #     print(item, getattr(TripleString, item, None))
 
-# 8b ---------------------------------------------------------------------
-# from multistring import TripleString
+# 7b ---------------------------------------------------------------------
+# from triplestring import TripleString
 #
 # t1 = TripleString('a', 'b', 'c')
 # print('Object attributes:\n')
 # for item in dir(t1):
 #     print(item, getattr(t1, item, None))
 
-# 9 ---------------------------------------------------------------------
-# from multistring import TripleString
+# 8 ---------------------------------------------------------------------
+# from triplestring import TripleString
 #
 # t1 = TripleString('a', 'b', 'c')
 #

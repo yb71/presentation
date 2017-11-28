@@ -95,12 +95,11 @@ class TripleString(object):
             return cls(string1=lst[0], string2=lst[1], string3=lst[2])
 
 
-print('*** after class varx =', varx, '\n----------------------------------------------------------\n')
+print('*** after class varx =', varx, '\n-------------------------------------------\n')
 
 
 if __name__ == '__main__':
-
-    t = TripleString(
+    the_three_laws = TripleString(
         string1='''A robot may not injure a human being or, through inaction, 
             allow a human being to come to harm.''',
         string2='''A robot must obey the orders given to it by human beings, 
@@ -108,5 +107,4 @@ if __name__ == '__main__':
         string3='''A robot must protect its own existence 
             as long as such protection does not conflict 
             with the First or Second Law.''')
-    print(t)
-
+    print(the_three_laws)

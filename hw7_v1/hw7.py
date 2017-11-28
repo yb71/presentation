@@ -1,16 +1,16 @@
 # 2a ---------------------------------------------------------------------
-# import multystring
+import multistring
 
 
 # 2b ---------------------------------------------------------------------
-# import multystring
+# import multistring
 #
 # print("<< printing from module {} >>".format(__name__))
 # print()
 
 
 # 3 ---------------------------------------------------------------------
-# import multystring as ms
+# import multistring as ms
 #
 # print()
 # print("_MIN_LEN =", ms._MIN_LEN)
@@ -46,7 +46,7 @@
 
 
 # 5a ---------------------------------------------------------------------
-# from multystring import TripleString, varx
+# from multistring import TripleString, varx
 #
 # assert varx == "global"
 # varx = "test"
@@ -56,7 +56,7 @@
 
 
 # 5b ---------------------------------------------------------------------
-# from multystring import TripleString, varx
+# from multistring import TripleString, varx
 # from pycallgraph import PyCallGraph
 # from pycallgraph.output import GraphvizOutput
 #
@@ -68,7 +68,7 @@
 
 
 # 6a ---------------------------------------------------------------------
-from multystring import TripleString
+from multistring import TripleString
 
 # t1 = TripleString('a', 'b', 'c')
 # t2 = TripleString('x', 'y', 'z')
@@ -104,7 +104,7 @@ from multystring import TripleString
 
 
 # 7a ---------------------------------------------------------------------
-# from multystring import TripleString
+# from multistring import TripleString
 #
 # t1 = TripleString('a', 'b', 'c')
 # t2 = TripleString.from_list(['a', 'b', 'c'])
@@ -115,7 +115,7 @@ from multystring import TripleString
 
 
 # 7b ---------------------------------------------------------------------
-# from multystring import TripleString
+# from multistring import TripleString
 #
 # t1 = TripleString('a', 'b', 'c')
 # print(t1)
@@ -125,14 +125,14 @@ from multystring import TripleString
 
 
 # 8a ---------------------------------------------------------------------
-# from multystring import TripleString
+# from multistring import TripleString
 #
 # print('Class attributes:\n')
 # for item in dir(TripleString):
 #     print(item, getattr(TripleString, item, None))
 
 # 8b ---------------------------------------------------------------------
-# from multystring import TripleString
+# from multistring import TripleString
 #
 # t1 = TripleString('a', 'b', 'c')
 # print('Object attributes:\n')
@@ -140,7 +140,7 @@ from multystring import TripleString
 #     print(item, getattr(t1, item, None))
 
 # 9 ---------------------------------------------------------------------
-# from multystring import TripleString
+# from multistring import TripleString
 #
 # t1 = TripleString('a', 'b', 'c')
 #

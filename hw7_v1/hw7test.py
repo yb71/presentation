@@ -23,10 +23,11 @@ import triplestring
 
 
 # 3 ---------------------------------------------------------------------
-import math
-
-# print(math.pi)
+# import math
+#
 # pi = 5
+# print('my pi =', pi)
+# print('math.pi =', math.pi)
 # math.pi = 666  # you are unlikely do it just by accident
 # print('my pi =', pi)
 # print('math.pi =', math.pi)
@@ -34,7 +35,7 @@ import math
 # from math import *
 #
 # print(pi)
-# pi = 777  # intended? much easier to do by accident
+# pi = 777  # intended? much easier to overwrite by accident
 # print(pi)
 
 # from math import sqrt, log

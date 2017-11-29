@@ -1,0 +1,47 @@
+/Users/yuliafalls/PythonEnvironments/homework7/bin/python /Users/yuliafalls/PycharmProjects/Homework7/hw7_v1/hw7test.py
+
+<<< printing from module triplestring >>>
+*** before class varx = triplestring global
+***   from class varx = triplestring class
+***  after class varx = triplestring global
+-------------------------------------------
+
+Class attributes:
+
+LUCKY_NUM 3
+__class__ <class 'type'>
+__delattr__ <slot wrapper '__delattr__' of 'object' objects>
+__dict__ {'__module__': 'triplestring', '__doc__': 'TripleString docstring', '_count': 0, 'LUCKY_NUM': 3, 'varx': 'triplestring class', '_is_valid': <staticmethod object at 0x102a40e10>, '__init__': <function TripleString.__init__ at 0x102a47730>, 'abbreviate': <function TripleString.abbreviate at 0x102a477b8>, '__repr__': <function TripleString.__repr__ at 0x102a47840>, '__str__': <function TripleString.__str__ at 0x102a478c8>, '__eq__': <function TripleString.__eq__ at 0x102a47950>, 'string1': <property object at 0x102a4fd18>, 'string2': <property object at 0x102a4fd68>, 'string3': <property object at 0x102a4fdb8>, 'from_list': <classmethod object at 0x102a40e48>, '__dict__': <attribute '__dict__' of 'TripleString' objects>, '__weakref__': <attribute '__weakref__' of 'TripleString' objects>, '__hash__': None}
+__dir__ <method '__dir__' of 'object' objects>
+__doc__ TripleString docstring
+__eq__ <function TripleString.__eq__ at 0x102a47950>
+__format__ <method '__format__' of 'object' objects>
+__ge__ <slot wrapper '__ge__' of 'object' objects>
+__getattribute__ <slot wrapper '__getattribute__' of 'object' objects>
+__gt__ <slot wrapper '__gt__' of 'object' objects>
+__hash__ None
+__init__ <function TripleString.__init__ at 0x102a47730>
+__init_subclass__ <built-in method __init_subclass__ of type object at 0x102b03ab8>
+__le__ <slot wrapper '__le__' of 'object' objects>
+__lt__ <slot wrapper '__lt__' of 'object' objects>
+__module__ triplestring
+__ne__ <slot wrapper '__ne__' of 'object' objects>
+__new__ <built-in method __new__ of type object at 0x1002416e0>
+__reduce__ <method '__reduce__' of 'object' objects>
+__reduce_ex__ <method '__reduce_ex__' of 'object' objects>
+__repr__ <function TripleString.__repr__ at 0x102a47840>
+__setattr__ <slot wrapper '__setattr__' of 'object' objects>
+__sizeof__ <method '__sizeof__' of 'object' objects>
+__str__ <function TripleString.__str__ at 0x102a478c8>
+__subclasshook__ <built-in method __subclasshook__ of type object at 0x102b03ab8>
+__weakref__ <attribute '__weakref__' of 'TripleString' objects>
+_count 0
+_is_valid <function TripleString._is_valid at 0x102a476a8>
+abbreviate <function TripleString.abbreviate at 0x102a477b8>
+from_list <bound method TripleString.from_list of <class 'triplestring.TripleString'>>
+string1 <property object at 0x102a4fd18>
+string2 <property object at 0x102a4fd68>
+string3 <property object at 0x102a4fdb8>
+varx triplestring class
+
+Process finished with exit code 0

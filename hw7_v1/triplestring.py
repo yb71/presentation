@@ -9,8 +9,8 @@ print("<<< printing from module {} >>>".format(__name__))
 print('*** before class varx =', varx)
 
 
-def my_addition(x, y):
-    return x + y
+# def my_addition(x, y):
+#     return x + y
 
 
 class TripleString(object):
@@ -98,13 +98,13 @@ class TripleString(object):
 print('***  after class varx =', varx, '\n-------------------------------------------\n')
 
 
-# if __name__ == '__main__':
-#     the_three_laws = TripleString(
-#         string1='''A robot may not injure a human being
-#             or, through inaction, allow a human being to come to harm.''',
-#         string2='''A robot must obey the orders given to it by human beings,
-#             except where such orders would conflict with the First Law.''',
-#         string3='''A robot must protect its own existence
-#             as long as such protection does not conflict
-#             with the First or Second Law.''')
-#     print(the_three_laws)
+if __name__ == '__main__':
+    the_three_laws = TripleString(
+        string1='''A robot may not injure a human being
+            or, through inaction, allow a human being to come to harm.''',
+        string2='''A robot must obey the orders given to it by human beings,
+            except where such orders would conflict with the First Law.''',
+        string3='''A robot must protect its own existence
+            as long as such protection does not conflict
+            with the First or Second Law.''')
+    print(the_three_laws)

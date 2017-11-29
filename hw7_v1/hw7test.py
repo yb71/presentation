@@ -1,6 +1,5 @@
 # 1a ---------------------------------------------------------------------
-import triplestring
-
+# import triplestring
 
 # 1b ---------------------------------------------------------------------
 # import triplestring
@@ -26,7 +25,7 @@ import triplestring
 # import math
 #
 # pi = 5
-# print('my pi =', pi)
+# # print('my pi =', pi)
 # print('math.pi =', math.pi)
 # math.pi = 666  # you are unlikely do it just by accident
 # print('my pi =', pi)
@@ -40,8 +39,8 @@ import triplestring
 
 # from math import sqrt, log
 #
-# print(pi)
-# print(math.pi)  # gives you no direct access to pi
+# # print(pi)
+# # print(math.pi)  # gives you no direct access to pi
 # pi = 5            # clearly a local variable
 # print('pi =', pi)
 # x = sqrt(pi)

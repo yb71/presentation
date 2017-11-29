@@ -23,22 +23,25 @@ import triplestring
 
 
 # 3 ---------------------------------------------------------------------
-# import math
-#
+import math
+
 # print(math.pi)
-# math.pi = 666
-# print(math.pi)
+# pi = 5
+# math.pi = 666  # you are unlikely do it just by accident
+# print('my pi =', pi)
+# print('math.pi =', math.pi)
 
 # from math import *
 #
 # print(pi)
-# pi = 777
+# pi = 777  # intended? much easier to do by accident
 # print(pi)
 
 # from math import sqrt, log
 #
-# math.pi  # gives you no direct access to pi
-# pi = 5
+# print(pi)
+# print(math.pi)  # gives you no direct access to pi
+# pi = 5            # clearly a local variable
 # print('pi =', pi)
 # x = sqrt(pi)
 # y = log(pi)
@@ -47,12 +50,13 @@ import triplestring
 # 4a ---------------------------------------------------------------------
 # from triplestring import TripleString, varx
 #
-# assert varx == "global"
-# varx = "test"
+# assert varx == "triplestring global"
 #
+# varx = "test"
 # t = TripleString.from_list(['one'])
 # print(t)
-
+# print('varx =', varx)
+# print()
 
 # 4b ---------------------------------------------------------------------
 # from triplestring import TripleString, varx
@@ -60,15 +64,15 @@ import triplestring
 # from pycallgraph.output import GraphvizOutput
 #
 # graphviz = GraphvizOutput()
-# graphviz.output_file = 'diagram.png'
+# graphviz.output_file = 'diagram1.png'
 #
 # with PyCallGraph(output=graphviz):
 #     t = TripleString.from_list(['one', 'two', 'three'])
 
 
 # 5a ---------------------------------------------------------------------
-from triplestring import TripleString
-
+# from triplestring import TripleString
+#
 # t1 = TripleString('a', 'b', 'c')
 # t2 = TripleString('x', 'y', 'z')
 # print(t1)
@@ -82,14 +86,14 @@ from triplestring import TripleString
 #
 # TripleString.LUCKY_NUM = 200
 # print("TripleString.LUCKY_NUM ->", TripleString.LUCKY_NUM)
-# print("t1.NUM ->", t1.LUCKY_NUM)
-# print("t2.NUM ->", t2.LUCKY_NUM)
+# print("t1.LUCKY_NUM ->", t1.LUCKY_NUM)
+# print("t2.LUCKY_NUM ->", t2.LUCKY_NUM)
 # print()
 #
 # t1.LUCKY_NUM = 666
 # print("TripleString.LUCKY_NUM ->", TripleString.LUCKY_NUM)
-# print("t1.NUM ->", t1.LUCKY_NUM)
-# print("t2.NUM ->", t2.LUCKY_NUM)
+# print("t1.LUCKY_NUM ->", t1.LUCKY_NUM)
+# print("t2.LUCKY_NUM ->", t2.LUCKY_NUM)
 # print()
 # print(t1.__dict__)
 # print(t2.__dict__)

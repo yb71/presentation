@@ -2,7 +2,7 @@
 _MIN_LEN = 1
 _MAX_LEN = 150
 _DEFAULT = "undefined"
-varx = "global"
+varx = "triplestring global"
 
 print()
 print("<<< printing from module {} >>>".format(__name__))
@@ -17,9 +17,9 @@ class TripleString(object):
     """TripleString docstring"""
 
     _count = 0  # class level variables
-    LUCKY_NUM = 5
-    varx = "class"
-    print("*** from class varx =", varx)
+    LUCKY_NUM = 3
+    varx = "triplestring class"
+    print("***   from class varx =", varx)
 
     @staticmethod
     def _is_valid(the_str):
@@ -95,7 +95,7 @@ class TripleString(object):
             return cls(string1=lst[0], string2=lst[1], string3=lst[2])
 
 
-print('*** after class varx =', varx, '\n-------------------------------------------\n')
+print('***  after class varx =', varx, '\n-------------------------------------------\n')
 
 
 # if __name__ == '__main__':

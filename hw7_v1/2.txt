@@ -1,9 +1,3 @@
-<<< printing from module triplestring >>>
-*** before class varx = triplestring global
-***   from class varx = triplestring class
-***  after class varx = triplestring global
--------------------------------------------
-
 Object attributes:
 
 LUCKY_NUM 3

@@ -59,12 +59,12 @@
 # print()
 
 # 4b ---------------------------------------------------------------------
-# from triplestring import TripleString, varx
+# from triplestring import TripleString
 # from pycallgraph import PyCallGraph
 # from pycallgraph.output import GraphvizOutput
 #
 # graphviz = GraphvizOutput()
-# graphviz.output_file = 'diagram1.png'
+# graphviz.output_file = 'diagram.png'
 #
 # with PyCallGraph(output=graphviz):
 #     t = TripleString.from_list(['one', 'two', 'three'])

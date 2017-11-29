@@ -1,5 +1,3 @@
-/Users/yuliafalls/PythonEnvironments/homework7/bin/python /Users/yuliafalls/PycharmProjects/Homework7/hw7_v1/hw7test.py
-
 <<< printing from module triplestring >>>
 *** before class varx = triplestring global
 ***   from class varx = triplestring class
@@ -47,5 +45,3 @@ string1 a
 string2 b
 string3 c
 varx triplestring class
-
-Process finished with exit code 0

@@ -113,7 +113,7 @@ import math
 # t2 = TripleString.from_list(['a', 'b', 'c'])
 #
 # print(t1)
-# print(t2)        # uses __repr__ method
+# print(t2)        # uses __str__ method
 # print(t1 == t2)  # uses __eq__ method
 
 
@@ -123,6 +123,7 @@ import math
 # t1 = TripleString('a', 'b', 'c')
 # print(t1)
 #
+# print(t1.abbreviate)
 # print(t1.abbreviate())
 # print(TripleString.abbreviate(t1))  # alternative syntax for instance methods
 
